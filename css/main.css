@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: arial;
+	font-size: 18px;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 25px;
+	border: 1px solid #ddd;
+	background: #f5f5f5;
+}
+.title {
+	font-size: 40px;
+	color: #d35400;
+}
+.firstHR {
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #ddd;
+	padding: 0px 0px;
+	margin: -5px 0px 15px 0px;
+}
+.secondHR {
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #ddd;
+	padding: 0px 0px;
+	margin: 10px 0px 10px 0px;
+}
+textarea {
+	width: 250px;
+	height: 250px;
+	margin: 20px 0px;
+	font-size: 18px;
+	padding: 8px;
+	border: none;
+	border: 2px solid #e67e22;
+	border-radius: 5px;
+	outline: none;
+}
+textarea::placeholder {
+	line-height: 18px;
+	font-family: arial;
+	font-weight: lighter;
+	font-size: 15px;
+}
+small {
+	color: #888;
+	font-size: 14px;
+}
+img {
+	padding: 0px 5px;
+}
+.links {
+	margin-bottom: 10px;
+}
+.cmn-toggle {
+	position: absolute;
+	margin-left: -9999px;
+	visibility: hidden;
+}
+
+.cmn-toggle + label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	user-select: none;
+}
+
+input.cmn-toggle-round-flat + label {
+	padding: 2px;
+	width: 120px;
+	height: 60px;
+	background-color: #dddddd;
+	border-radius: 60px;
+	transition: background 0.4s;
+}
+
+input.cmn-toggle-round-flat + label:before,
+input.cmn-toggle-round-flat + label:after {
+	display: block;
+	position: absolute;
+	content: "";
+}
+
+input.cmn-toggle-round-flat + label:before {
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	right: 2px;
+	background-color: #fff;
+	border-radius: 60px;
+	transition: 0.4s;
+}
+
+input.cmn-toggle-round-flat + label:after {
+	top: 4px;
+	left: 4px;
+	bottom: 4px;
+	width: 52px;
+	background-color: #dddddd;
+	border-radius: 52px;
+	transition: margin 0.4s, background 0.4s;
+}
+
+input.cmn-toggle-round-flat:checked + label {
+	background-color: #e67e22;
+}
+
+input.cmn-toggle-round-flat:checked + label:after {
+	margin-left: 60px;
+	background-color: #e67e22;
+}
+
+
+
+
+
+

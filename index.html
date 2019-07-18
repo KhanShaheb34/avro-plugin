@@ -3,29 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
-    <div>
-        <div class="row">
-            <div class=column>
-                <label class="switch">
-                    <input type="checkbox" id="on_off">
-                    <span class="slider"></span>
-                </label>
-            </div>
-            <div class="column">
-                <b>Guide:</b>
-            </div>
-            <div class="column">
-                1. Write word and press <b>space</b><br>2. After changing button state, please <b>refresh page</b> :(
-            </div>
+    <div class="container">
+        <div class="title">অভ্র</div>
+        <span class="firstHR"></span>
+        <div class="switch">    
+            <input id="on_off" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+            <label for="on_off"></label>
         </div>
-        <div class="row">
-            <textarea id="emergency_input" rows="7" cols="52"
-                placeholder="Sometime your domain/page restrict their input fields. In those cases, you write here and paste there."></textarea>
+        <textarea id="emergency_input"
+            placeholder="Sometime your domain or page restricts their input fields.
+
+In those cases, you write here and paste there."></textarea>
+        <small>Refresh the page after changing state</small>
+        <span class="secondHR"></span>
+        <div class="links">
+            <a href="https://github.com/khabib97/avro-plugin" title="See github repository"><img src="img/github-logo.png"></a>
+            <a href="https://github.com/KhanShaheb34" title="Write word and press space"><img src="img/question-mark.png"></a>
         </div>
+    </div>
+    <div class="floating">
+        
     </div>
     <script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/avro-v1.1.4.min.js" type="text/javascript" charset="utf-8"></script>
@@ -33,3 +34,10 @@
 </body>
 
 </html>
+
+<!-- <div class="column">
+                <b>Guide:</b>
+            </div>
+            <div class="column">
+                1. Write word and press <b>space</b><br>2. After changing button state, please <b>refresh page</b> :(
+            </div> -->
